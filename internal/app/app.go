@@ -3,6 +3,7 @@ package app
 import (
 	"os"
 
+	"github.com/max-farver/maia/internal/codecov"
 	"github.com/max-farver/maia/internal/kube"
 
 	"github.com/spf13/cobra"
@@ -24,4 +25,5 @@ func Execute() {
 
 func init() {
 	rootCmd.AddCommand(kube.CopyToPodCmd)
+	rootCmd.AddCommand(codecov.Cmd)
 }
