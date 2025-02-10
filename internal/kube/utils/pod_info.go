@@ -6,5 +6,4 @@ func ListActivePods() []string {
 
 func ListContainersForPod(podName string) []string {
 	return []string{"container-1", "container-2"}
-
 }
