@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var Cmd = &cobra.Command{
+var PRCoverageCmd = &cobra.Command{
 	Use:   "pr-codecov",
 	Short: "Generate a coverage report for the current PR.",
 	RunE: func(cmd *cobra.Command, args []string) error {

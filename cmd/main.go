@@ -3,6 +3,7 @@ package cmd
 import (
 	"os"
 
+	"github.com/max-farver/maia/internal/codecov"
 	"github.com/max-farver/maia/internal/kube"
 
 	"github.com/spf13/cobra"
@@ -24,5 +25,5 @@ func Execute() {
 
 func init() {
 	rootCmd.AddCommand(kube.CopyToPodCmd)
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.AddCommand(codecov.PRCoverageCmd)
 }
